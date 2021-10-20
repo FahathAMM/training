@@ -33,7 +33,7 @@ php artisan serve
 
 You can visit `http;//localhost:8000` using your web browser to confirm it runs.
 
-![Default Laravel Landing Page](../../../../images/default-laravel-8-landing-page.png)
+![Default Laravel Landing Page](images/default-laravel-8-landing-page.png)
 
 
 ## Plan database

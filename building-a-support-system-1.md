@@ -240,7 +240,7 @@ Notice how we have dynamically added the page title to the blade template using 
 
 Our view has its first-ever custom content.
 
-![Bare Landing Page](../../../../images/support-bare-landing-page.png)
+![Bare Landing Page](images/support-bare-landing-page.png)
 
 We use [Bootstrap 4](https://getbootstrap.com/docs/4.0/getting-started/introduction/) to add some styling to our app.
 
@@ -385,7 +385,7 @@ And we need to add the code for our form:
 
 Now when you reload the browser, your form will look like this:
 
-![Open Ticket Form](../../../../images/support-open-titcket-form.png)
+![Open Ticket Form](images/support-open-titcket-form.png)
 
 We have added some **Bootstrap** classes to keep the elements organized.
 
@@ -502,7 +502,7 @@ We will use the same layout for all other views of this application.
 
 Coming back to our form. What happens when you fill the form and submit it? Give it a try, and you will get this:
 
-![419 Error](../../../../images/support-419-error.png)
+![419 Error](images/support-419-error.png)
 
 This error occurs because Laravel is expecting some other information with the form data to verify that it comes from a legitimate user. And that piece of information is called **CSRF** token. Read [CSRF Protection](https://laravel.com/docs/8.x/csrf) on official Laravel documentation to learn what is CSRF and why it is used.
 
@@ -784,7 +784,7 @@ Also create the view file `resources/views/tickets/show.blade.php`.
 
 And, now it looks like:
 
-![Ticket View](../../../../images/support-titket-view.png)
+![Ticket View](images/support-titket-view.png)
 
 With that the minimum required work to open a support ticket on our online support system is over.
 
@@ -800,7 +800,7 @@ Because of this, we can use an **SMTP** email trap. Mailtrap is such a service. 
 
 Once you are successfully registered, open your inbox to find the **SMTP** details for your account. Select **Laravel 7+** from the dropdown below the **Integrations** label. It will show you the configuration details you need to add to your `.env` file.
 
-![Mailtrap SMTP Details](../../../../images/mailtrap-smtp-details.png)
+![Mailtrap SMTP Details](images/mailtrap-smtp-details.png)
 
 Copy and paste them to your `.env` file replacing the existing email server configurations.
 
@@ -989,7 +989,7 @@ Let's build a way for customers to come back at a later time and check their tic
 
 > Note that we use the **GET** method for submitting our form. Usually, the search forms are for getting (requesting) some data from the server. Due to this reason, we do not use the **POST** method. Also, the **GET** request adds the form parameters to **query string**, making it a unique resource identifier for the results we are getting. This can be helpful if you are sharing the search result with someone else. You can simply copy the browser URL after submitting the form and share it with anyone. This would be a good point to keep in mind when you are adding a search form to any other web application.
 
-![Search Ticket](../../../../images/support-search-ticket.png)
+![Search Ticket](images/support-search-ticket.png)
 
 Next, we need to add the `tickets.search` route to the `routes/web.php` file. Add the following line right before the resource routes of the **TicketController**
 
@@ -1017,7 +1017,7 @@ public function search(Request $request)
 
 Now it shows the ticket when you enter a valid reference number. If not it shows something like this:
 
-![Ticket Not Found](../../../../images/support-ticket-not-found.png)
+![Ticket Not Found](images/support-ticket-not-found.png)
 
 
 The first part of this tutorial ends here. We will discuss how to develop the functionality for the **Support Agent** to manage and reply to the tickets in **Part 2**.

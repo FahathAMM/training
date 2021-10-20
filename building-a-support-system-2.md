@@ -166,7 +166,7 @@ Note that we are using a form submitted with `GET` method to make sure it genera
 
 Once the UI is ready, it will look like this:
 
-![Search/Sort Form](../../../../images/support-table-with-search-sort-form.png)
+![Search/Sort Form](images/support-table-with-search-sort-form.png)
 
 Now, let's add the code to `index()` method in controller to do the searching and sorting.
 
@@ -743,7 +743,7 @@ We know the last commented agent. Let's go back to the tickets table on `resourc
 
 Looks good!
 
-![Value For Handled By](../../../../images/support-tickets-table-handled-by.png)
+![Value For Handled By](images/support-tickets-table-handled-by.png)
 
 
 ## Emails Vs Notifications
